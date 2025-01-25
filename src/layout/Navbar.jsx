@@ -3,7 +3,7 @@ import {Link, Outlet, NavLink} from "react-router-dom"
 import {navbarlink} from '../data';
 import '../Style/navbar.css'
 import Offcanvas from '../lib/OffCanvas'
-
+import Footer from '../Pages/Footer'
 
 const Navbar = () => {
     return (
@@ -50,6 +50,7 @@ const Navbar = () => {
           </section>
         </section>
             <Outlet/>
+            <Footer/>
         </>
     )
 }

@@ -31,7 +31,7 @@ const Footer = () => {
                             <p>Contact</p>
                         </div>
                     </section>
-                    <section className = 'footmat'>
+                    <section className = 'footmat '>
                         <h3 className = 'footer-h3'>Socials</h3>
                         <div className = 'd-flex gap-2 footer-logo'>
                             <img src= {facebooklogo} alt=""/>

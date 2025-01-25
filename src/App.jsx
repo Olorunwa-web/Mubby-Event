@@ -10,7 +10,8 @@ import CreateEvent from "./Pages/CreateEvent";
 import  Dashboard from "./Pages/Dashboard";
 import Navbar from './layout/Navbar';
 import Resetpass from './Auth/RESETpass';
-import Footer from './Pages/Footer'
+
+
 
 function App() {
 
@@ -30,7 +31,6 @@ function App() {
           <Route path = "/auth/resetpass" element = {<Resetpass/>}/>
       </Routes>
       </BrowserRouter>
-      <Footer/>
 
     </>
   )
