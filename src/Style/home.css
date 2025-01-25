@@ -1,0 +1,385 @@
+
+
+.background-images {
+    background-image: url('../assets/Frame 1171276704.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper {
+    width: 583px;
+    /* height: 330px; */
+}
+
+.home-page h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63.8px;
+    font-family: var(--ff-space-grotesk);
+    color: #FFFFFF;
+}
+
+.home-page p {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+    color: #FFFFFF;
+    width: 549px;
+}
+
+.sign-btn {
+    width: 264px;
+    height: 50px;
+    border: none;
+    background-color: #9747FF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.upcoming-event h3 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 38.28px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.upcoming-event p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+
+}
+
+.outside-event-width {
+    /* border: 2px solid; */
+    width: 100%;
+
+}
+
+.insider-event-width {
+    /* border: 2px solid red; */
+    width: 30.5%;
+}
+
+.title h2 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+    padding-top: 11px;
+}
+
+.host {
+    color: #000000;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.host-span {
+    color: #000000;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+    padding-left: 4px;
+}
+
+.cate {
+    margin-top: -12px;
+}
+
+.venue {
+    color: #000000;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.gapss {
+    gap: 13px;
+}
+
+.src-img {
+    width: 21px;
+    height: 21px;
+}
+
+.event-h2 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 38.28px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.join-width {
+    width: 48%;
+    background-color: #9747FF0F;
+    padding: 42px 37px;
+    border-radius: 12px ;
+}
+
+.event-width {
+    width: 48%;
+    background-color: #0000000F;
+    padding: 42px 37px;
+    border-radius: 12px ;
+}
+
+.join h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 51.04px;
+    font-family: var(--ff-space-grotesk);
+
+}
+
+.join p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22.97px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.signss-btn {
+    width: 264px;
+    height: 50px;
+    border: none;
+    background-color: #9747FF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+
+}
+
+.signs-btn {
+    width: 264px;
+    height: 50px;
+    border: none;
+    background-color: #000000;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+}
+
+
+
+
+
+
+@media (max-width:767px) {
+    .wrapper {
+        width: 100% !important;
+        margin-top: 30px;
+        height: 100%;
+    }
+
+    .background-images  {
+        background-image: none;
+        height: 100%;
+    }
+
+    .sign-btn {
+        width: 40%;
+        font-size: 17px;
+        height: 40px;
+    }
+
+    .home-page h1 {
+        font-size: 29px;
+        line-height: 40px;
+        color: #000000;
+    }
+
+    .space-home {
+        padding: 0 10px;
+    }
+
+    .home-page p {
+        color:#000000;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .outside-event-width {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .insider-event-width {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    .upcoming-event h3 {
+        font-size: 23px;
+    }
+    
+    .upcoming-event p {
+        font-size: 17px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+    }
+    
+    .host {
+        font-size: 18px;
+    }
+    
+    .host-span {
+        font-size: 18px;
+        padding-left: 4px;
+    }
+    
+    .cate {
+        margin-top: -12px;
+    }
+    
+    .venue {
+        font-size: 18px;
+    }
+    
+    .gapss {
+        gap: 12px;
+    }
+    
+    .src-img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .signs-btn {
+        width: 50%;
+        font-size: 17px;
+        height: 40px;
+    }
+
+    .signss-btn {
+        width: 40%;
+        font-size: 17px;
+        height: 40px;
+    }
+
+    .join-width {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .event-width {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .event-h2{
+        font-size: 22px;
+    }
+    
+    .join h1 {
+        font-size: 27px;
+    }
+    
+    .join p {
+        font-size: 17px;
+    }
+
+    .flex-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+
+} 
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .home-page h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .home-page p {
+        font-size: 18px;
+        width: 100%;
+        
+    }
+
+    .background-images {
+        height: 55vh;
+    }
+
+    .outside-event-width {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 17px;
+    }
+
+    .insider-event-width {
+        width: 48%;
+    }
+
+    .upcoming-event h3 {
+        font-size: 23px;
+    }
+    
+    .upcoming-event p {
+        font-size: 18px;
+    }
+
+    .event-h2{
+        font-size: 22px;
+    }
+
+    .signs-btn , .signss-btn {
+        width: 50%;
+        font-size: 17px;
+        height: 40px;
+    }
+
+    .join-width {
+        padding: 20px;
+    }
+    
+    .event-width {
+        padding: 20px;
+    }
+
+    .join h1 {
+        font-size: 27px;
+    }
+    
+    .join p {
+        font-size: 17px;
+    }
+
+}
+

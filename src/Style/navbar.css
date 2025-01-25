@@ -1,0 +1,179 @@
+.nav-link-tag .active {
+    color: #9747FF;
+    border-bottom:  2px solid #9747FF;
+}
+
+
+.nav-link-tag .Active {
+    color: #9747FF;
+    border-bottom: 2px solid #9747FF;
+    
+}
+
+.background-nav {
+    background-color: #FFFFFF;
+    z-index: 10;
+}
+
+
+.mb-button {
+    width: 140px;
+    height: 57px;
+    border-radius: 3px;
+    background-color: #000000;
+    padding: 7px;
+    gap: 20px;
+    padding-bottom: 3px;
+}
+
+.mb-tag {
+    font-family: var(--ff-playfair-SC);
+    font-weight: 900;
+    font-size: 32px;
+    color: #9747FF;
+    line-height: 43.99px;
+    letter-spacing: -12px;
+}
+
+.event-spantag {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30.62px;
+    font-family: var(--ff-space-grotesk);
+    margin-top: -4px;
+}
+
+.nav-link-tag {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.signup-btn, .signin-btn {
+    width: 135px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+}
+
+
+.signin-btn:hover {
+    background-color: #9747FF;
+    border: none;
+    color: #FFFFFF;
+    transition: ease-in-out 0.3;
+
+}
+
+ .signup-btn:hover{
+    background-color: #9747FF;
+    border: none;
+    color: #FFFFFF;
+    transition: ease-in-out 0.3;
+
+}
+
+.menu-icon {
+    width: 30px;
+}
+
+.signin-img-icon {
+    width: 27px;
+}
+
+
+
+.close-icon {
+    width: 27px;
+}
+
+
+
+
+@media (max-width:767px) {
+    .spaces {
+        padding: 0;
+        background-color: #000000;
+       
+    }
+
+    .background-nav {
+        background-color: #FFFFFF;
+        z-index: 10;
+    }
+
+    
+
+    .nav-top-space {
+        padding: 0 8px;
+    }
+
+
+    .mb-button {
+        width: 120px;
+        height: 40px;
+    }
+
+    .mb-tag {
+        font-size: 27px;
+    }
+    
+    .event-spantag {
+        font-size: 17px;
+    }
+
+    .nav-link-tag {
+        font-size: 17px;
+    }
+
+    .signup-btn, .signin-btn {
+        height: 40px;
+        font-size: 17px;
+        width: 130px;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    
+    .mb-button {
+        width: 130px;
+        height: 40px;
+    }
+
+    .mb-tag {
+        font-size: 28px;
+    }
+    
+    .event-spantag {
+        font-size: 18px;
+    }
+
+    .nav-link-tag {
+        font-size: 17px;
+    }
+
+    .signup-btn, .signin-btn {
+        height: 40px;
+        font-size: 17px;
+        width: 100px;
+    }
+
+    .display-screen {
+        display: flex !important;
+    }
+}
+
+
+

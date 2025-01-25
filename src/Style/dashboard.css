@@ -1,0 +1,18 @@
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.dashboard-section-1 {
+    border: 2px solid red;
+
+}
+
+.dashboard-section-2 {
+    border: 2px solid purple;
+    flex: 1;
+
+}

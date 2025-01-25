@@ -1,0 +1,423 @@
+.sign-up-space {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red ; */
+
+}
+
+.sign-up-spaces {
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.sign-up-flex{
+    height: 94vh;
+    margin: 0 2rem;
+}
+
+.sign-up-flexs {
+    height: 100vh;
+    margin: 0 2rem;
+
+}
+
+
+.image-wrapper-width {
+    width: 53%;
+    height: 100%;
+    /* border: 2px solid ; */
+}
+
+.form-wrapper-width {
+    width: 47%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.inside-wrapper {
+    width: 91%;
+}
+
+.image-wrapper {
+    width: 100%;
+}
+
+.image-signup {
+    width: 100%;
+    height: 100%;
+}
+
+.mb-sign-button {
+    width: 170px;
+    height: 68px;
+    border-radius: 4.19px;
+    background-color: #000000;
+    padding: 9.78px;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.mb-tags {
+    font-family: var(--ff-playfair-SC);
+    font-weight: 900;
+    font-size: 44px;
+    color: #9747FF;
+    line-height: 61.43px;
+    letter-spacing: -18px;
+}
+
+.event-spantags {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 30.62px;
+    font-family: var(--ff-space-grotesk);
+    margin-top: -7px;
+}
+
+
+.create-tags h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40.83px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+}
+
+.create-tags p {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+}
+
+.inputs {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #CDC7C7;
+    border-radius: 6px;
+    padding: 12px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.42px;
+    font-family: var(--ff-space-grotesk);
+    color: #00000066;
+    outline: none;
+}
+
+.inputs::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20.42px;
+    font-family: var(--ff-space-grotesk);
+    color: #00000066;
+}
+
+input[type = 'checkbox'] {	
+    transform: scale(1.2);
+
+}
+
+.term span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.59px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+}
+
+.terms {
+    text-decoration: underline;
+}
+
+.sign-up-btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #9747FF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.account-click {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+}
+
+.navigate-sign-in {
+    color: #9747FF;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.spans {
+    color: #EC5E5E;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.sign-up-flex {
+    gap: 100px;
+}
+
+.forgot-pass {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16.59px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+    text-decoration: underline;
+}
+
+.reset-flex {
+    width: 100%;
+    height: 100vh;
+}
+
+.reset-flexx {
+    height: 100vh;
+
+}
+
+.reset-wrapper {
+    width: 486px;
+    /* width: 100%; */
+
+}
+
+.reset-input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #CDC7C7;
+    border-radius: 6px;
+    padding: 12px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.42px;
+    font-family: var(--ff-space-grotesk);
+    color: #00000066;
+    outline: none;
+}
+
+.reset-input::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20.42px;
+    font-family: var(--ff-space-grotesk);
+    color: #00000066;
+}
+
+.reset-width {
+    width: 670px;
+}
+
+.interest-tag h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43.38px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+}
+
+.interest-tag p {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+}
+
+.five-span {
+    color: #9747FF;
+}
+
+.interest-ptag button {
+    height: 34px;
+    border: 1px solid #CDC7C7;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+    color: #000000;
+    padding: 3px 17px;
+    outline: none;
+}
+
+.interest-ptag button:hover {
+    background-color: #9747FF;
+    color: #FFFFFF;
+    border: none;
+}
+
+.continue-btn {
+    width: 250px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: #9747FF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25.52px;
+    font-family: var(--ff-space-grotesk);
+}
+
+.reveal-image  {
+    width: 22px;
+}
+
+.reveal-image:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width:765px) {
+    .image-wrapper-width {
+        width: 100%;
+        display: none;
+    }
+
+    .sign-up-space {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin: 30px 0;
+        
+    }
+
+    .sign-up-spaces {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    
+    .form-wrapper-width {
+        width: 100% !important;
+    }
+    
+    .inside-wrapper {
+        width: 100%;
+    }
+
+    .mb-sign-button {
+        width: 140px;
+        height: 48px;
+        gap: 20px;
+    }
+
+    .mb-tags {
+        font-size: 34px;
+        letter-spacing: -13px;
+    }
+    
+    .event-spantags {
+        font-size: 22px;
+        margin-top: -7px;
+    }
+
+    .create-tags {
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .create-tags h2 {
+        font-size: 26px;
+    }
+    
+    .create-tags p {
+        font-size: 17px;
+    }
+
+    .form-gap {
+        gap: 30px !important;
+    }
+
+    .sign-up-btn {
+        font-size: 17px;
+    }
+
+    .account-click, .navigate-sign-in {
+        font-size: 18px;
+    }
+
+    .sign-up-flex {
+        margin:  0;
+        height: auto;
+    }
+
+    .reset-wrapper {
+        width: 100%;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .reset-width {
+        width: 100%;
+        margin:  30px 0 !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+
+    }
+
+    .reset-flexx {
+        height: auto;
+    }
+
+    .interest-tag h1 {
+        font-size: 24px;
+    }
+
+    .interest-tag p {
+        font-size: 17px;
+
+    }
+
+    .account-click {
+        padding-bottom: 40px;
+    }
+    
+}
+
+
+@media (min-width:766px) and (max-width:991px) {
+    .image-wrapper-width {
+        width: 100%;
+        display: none;
+    }
+
+    .form-wrapper-width {
+        width: 500px !important;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inside-wrapper {
+        width: 100%;
+    }
+
+   
+
+    /* .sign-up-space {
+        margin: 100px 0;
+    } */
+}
+
+
+
+
