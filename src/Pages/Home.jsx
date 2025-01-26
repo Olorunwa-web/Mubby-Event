@@ -12,12 +12,12 @@ const Home = () => {
                  <section className = 'background-images'>
                    <div className = 'container space-home'> 
                      <div className = ' wrapper'>
-                       <div className = ' home-page'>
+                       <div className = 'home-page'>
                           <h1>Discover Unforgettable Experiences with Ease</h1>
                           <p>"Find, book, and manage tickets for concerts, workshops, and social gatherings with ease. Create events, connects with your audience, and start making lasting memories today!"</p>
                         </div>
                        <div className = 'mt-4 pt-2'>
-                           <button className = 'sign-btn'>Sign Up</button>
+                           <Link  to = '/auth/signup'><button className = 'sign-btn'>Sign Up</button></Link>
                        </div>
                      </div>
                      </div>
