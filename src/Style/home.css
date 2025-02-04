@@ -332,6 +332,7 @@
     .home-page p {
         font-size: 17px;
         width: 100%;
+        width: 450px;
         
     }
 
@@ -387,6 +388,7 @@
     
     .join p {
         font-size: 17px;
+        
     }
 
 }
