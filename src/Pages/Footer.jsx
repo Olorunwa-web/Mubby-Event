@@ -3,7 +3,10 @@ import facebooklogo from '../assets/facebook.svg';
 import instagramlogo from '../assets/instagram.svg';
 import twitterlogo from '../assets/twitter.svg';
 import youtubelogo from '../assets/youtube.svg';
-import '../Style/Footer.css'
+import '../Style/Footer.css';
+
+
+
 
 const Footer = () => {
     return (

@@ -20,9 +20,10 @@
 .home-page h1 {
     font-weight: 700;
     font-size: 48px;
-    line-height: 63.8px;
+    line-height: 60px;
     font-family: var(--ff-space-grotesk);
     color: #FFFFFF;
+    padding-bottom: 16px;
 }
 
 .home-page p {
@@ -50,7 +51,7 @@
 .upcoming-event h3 {
     color: #000000;
     font-weight: 500;
-    font-size: 27px;
+    font-size: 26px;
     line-height: 38.28px;
     font-family: var(--ff-space-grotesk);
 }
@@ -133,21 +134,21 @@
 .join-width {
     width: 48%;
     background-color: #9747FF0F;
-    padding: 42px 37px;
+    padding: 37px 37px;
     border-radius: 12px ;
 }
 
 .event-width {
     width: 48%;
     background-color: #0000000F;
-    padding: 42px 37px;
+    padding: 37px 37px;
     border-radius: 12px ;
 }
 
 .join h1 {
     color: #000000;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 34px;
     line-height: 51.04px;
     font-family: var(--ff-space-grotesk);
 
@@ -324,14 +325,20 @@
 
 @media (min-width:768px) and (max-width:991px) {
     .home-page h1 {
-        font-size: 35px;
-        line-height: 45px;
+        font-size: 34px;
+        line-height: 40px;
     }
 
     .home-page p {
-        font-size: 18px;
+        font-size: 17px;
         width: 100%;
         
+    }
+
+    .sign-btn {
+        width: 40%;
+        font-size: 17px;
+        height: 40px;
     }
 
     .background-images {
@@ -349,15 +356,15 @@
     }
 
     .upcoming-event h3 {
-        font-size: 23px;
+        font-size: 21px;
     }
     
     .upcoming-event p {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .event-h2{
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .signs-btn , .signss-btn {
@@ -367,15 +374,15 @@
     }
 
     .join-width {
-        padding: 20px;
+        padding: 17px;
     }
     
     .event-width {
-        padding: 20px;
+        padding: 17px;
     }
 
     .join h1 {
-        font-size: 27px;
+        font-size: 25px;
     }
     
     .join p {

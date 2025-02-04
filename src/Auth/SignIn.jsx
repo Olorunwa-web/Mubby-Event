@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signinSchema } from '../lib/SchemaValidation';
@@ -12,6 +12,13 @@ import eyehide from '../assets/visibility_off_24dp_00000066_FILL0_wght400_GRAD0_
 
 const SignIn = () => {
 
+
+
+
+    const [showSecond, setShowSecond]  = useState (false)
+
+
+    
 
     const [see, setSee] = useState(false)
 
@@ -62,7 +69,7 @@ const SignIn = () => {
                              <div className = 'd-flex flex-column gap-3'>
                                  <Link to =  '/auth/forgotpassword'><p className = 'forgot-pass'>Forgot Password?</p></Link> 
                                  <div className = 'mt-3'>
-                                    <button className = 'sign-up-btn' type = "submit" disabled = {isSubmitting}>Sign In</button>
+                                    <button className = 'sign-up-btn' type = "submit" disabled = {isSubmitting} >Sign In</button>
                                 </div>
                              </div>
                           </form>

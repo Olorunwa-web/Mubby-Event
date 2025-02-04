@@ -5,6 +5,9 @@ import { Event } from '../data';
 import { EventNear} from '../data';
 import  '../Style/home.css';
 
+
+
+
 const Home = () => {
     return (
         <>
@@ -30,7 +33,7 @@ const Home = () => {
                      <section className = 'container'>
                          <div className = 'd-flex justify-content-between align-items-center upcoming-event pb-2'>
                              <h3>Upcoming Events</h3>
-                             <p>See All</p>
+                             <p className = 'mt-2'>See All</p>
                          </div>
                          <div className = 'lp pb-4 mb-4'>
                              <div className = 'd-md-flex flex-md-wrap  justify-content-between align-items-cente outside-event-width'>
@@ -75,7 +78,7 @@ const Home = () => {
                          <section className = 'py-4 pb-5'>
                            <div className = 'd-flex justify-content-between align-items-center upcoming-event pb-2'>
                                <h3>Event Categories</h3>
-                                <p>See All</p>
+                                <p className = 'mt-2'>See All</p>
                            </div>
                            <div>
                                <div className = ' d-md-flex flex-md-wrap justify-content-between outside-event-width '>
@@ -110,10 +113,10 @@ const Home = () => {
                                    <div className = 'event-width'>
                                        <div className = 'd-flex justify-content-center align-items-center'>
                                           <div className = 'join'>
-                                             <h1>Create An Event</h1>
+                                            <h1>Create An Event</h1>
                                              <p>Bring your vision to life by creating and hosting your own event. From inimate meetups to large-scale gatherings, our easy-to-use platform helps you manage everything from ticketing to promotion. Engage with your audience, track your attendees, and make your event a success in just a few steps.</p>
                                             <div>
-                                                <button className = 'signs-btn'>Create Event</button>
+                                               <Link to = '/dashboard/createevent'><button className = 'signs-btn'>Create Event</button></Link>
                                              </div>
                                        </div>
                                        </div>
@@ -123,7 +126,7 @@ const Home = () => {
 
                            {/*  */}
 
-                           <section>
+                           <section className = 'mt-5 pt-3'>
                               <div className = 'd-flex justify-content-between align-items-center upcoming-event pb-2'>
                                   <h3>Event Near You</h3>
                                   <p>See All</p>
