@@ -5,7 +5,7 @@ import { resetpasswordSchema } from '../lib/SchemaValidation';
 import { Link } from 'react-router-dom';
 import eyeshow from '../assets/eye.svg'
 import eyehide from '../assets/visibility_off_24dp_00000066_FILL0_wght400_GRAD0_opsz24.svg';
-
+import { motion } from 'framer-motion'
 
 const ForgoPassword = () => {
 
@@ -33,9 +33,13 @@ const ForgoPassword = () => {
     }
 
 
+
     return (
         <>
-            <main className = 'd-flex justify-content-center align-items-center reset-flex '> 
+            <motion.main className = 'd-flex justify-content-center align-items-center reset-flex '
+              initial = {{x: '-100vw'}}
+              animate = {{x: 0}}
+            > 
                 <section className = 'reset-wrapper'>
                     <div className = "mb-sign-button  d-flex align-items-center justify-content-center mb-4">
                          <h3 className = 'mb-tags'>MB</h3>
@@ -61,7 +65,7 @@ const ForgoPassword = () => {
                         </div>
                     </form>
                 </section>
-            </main>
+            </motion.main>
         </>
     )
 }

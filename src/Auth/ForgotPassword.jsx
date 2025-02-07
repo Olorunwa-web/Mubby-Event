@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { forgotpasswordSchema } from '../lib/SchemaValidation';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion'
 
 
 
@@ -20,7 +21,10 @@ const ResetPassword = () => {
 
     return (
         <>
-            <main className = 'd-flex justify-content-center align-items-center reset-flex '>
+            <motion.main className = 'd-flex justify-content-center align-items-center reset-flex '
+              initial = {{x: '-100vw'}}
+              animate = {{x: 0}}
+            >
                 <section className = 'reset-wrapper'>
                     <div className = "mb-sign-button  d-flex align-items-center justify-content-center mb-4">
                          <h3 className = 'mb-tags'>MB</h3>
@@ -40,7 +44,7 @@ const ResetPassword = () => {
                         </div>
                     </form>
                 </section>
-            </main>
+            </motion.main>
         </>
     )
 }
