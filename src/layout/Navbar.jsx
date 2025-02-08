@@ -72,6 +72,7 @@ const Navbar = () => {
               </section>
           </section>
         </section>
+        
             <Outlet/>
             <Footer/>
         </>

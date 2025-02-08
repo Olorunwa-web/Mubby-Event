@@ -6,7 +6,7 @@ import { signinSchema } from '../lib/SchemaValidation';
 import signinImg from "../assets/image 3.jpg";
 import eyeshow from '../assets/eye.svg'
 import eyehide from '../assets/visibility_off_24dp_00000066_FILL0_wght400_GRAD0_opsz24.svg';
-
+import { motion } from 'framer-motion'
 
 
 
@@ -43,10 +43,18 @@ const SignIn = () => {
         <>
             <main className = 'px-3 py-4 sign-up-spaces'> 
                 <section className = "d-md-flex justify-content-between align-items-center sign-up-flex">
-                    <section className = 'image-wrapper-width'>
+                    <motion.section className = 'image-wrapper-width'
+                     initial = {{ x: '-100vw', opacity: 0}}
+                     animate = {{ x: 0, opacity: 1}}
+                    //  transition = {{delay: 0.1 , duration: 0.7}}
+                    >
                         <img src= {signinImg} alt="" className = 'image-signup'/>
-                    </section>
-                    <section className = 'form-wrapper-width d-flex align-items-center justify-content-center'>
+                    </motion.section>
+                    <motion.section className = 'form-wrapper-width d-flex align-items-center justify-content-center'
+                      initial = {{ x: '100vw', opacity: 0}}
+                      animate = {{ x: 0, opacity: 1}}
+                    //   transition = {{delay: 0.1 , duration: 0.7}}
+                    >
                         <div className = 'inside-wrapper'>
                            <div className = "mb-sign-button  d-flex align-items-center justify-content-center mb-4">
                                <h3 className = 'mb-tags'>MB</h3>
@@ -75,7 +83,7 @@ const SignIn = () => {
                           </form>
                           <p className = 'account-click'>Don't have an account? <span className = 'navigate-sign-in'><Link to = '/auth/signup' className = 'navigate-sign-in'>Sign Up </Link></span></p>
                         </div>
-                    </section>
+                    </motion.section>
                 </section>
             </main>
         </>

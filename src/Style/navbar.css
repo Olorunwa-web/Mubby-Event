@@ -13,6 +13,7 @@
 .background-nav {
     background-color: #FFFFFF;
     z-index: 999;
+    border-bottom: 1px solid  #EBEBED;
 
 }
 
@@ -119,7 +120,6 @@
     margin-top: 8px;
 
 }
-
 
 
 

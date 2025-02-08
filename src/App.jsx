@@ -23,7 +23,7 @@ function App() {
       <Routes>
           <Route element = {<Navbar/>}>
             <Route path = '/'  element = {<Home/>}>
-                <Route  path = '/dashboard/subhome' element = {<SubHome/>}/>
+                <Route  path = '/dashboard/subhome/' element = {<SubHome/>}/>
             </Route>
             <Route path = "/dashboard/event" element = {<Event/>}/>
             <Route path = "/dashboard/createevent" element = {<CreateEvent/>}/>

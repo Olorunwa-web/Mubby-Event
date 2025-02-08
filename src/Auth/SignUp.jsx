@@ -7,6 +7,7 @@ import '../Style/sign-up.css';
 import SignupImg from '../assets/Frame 1171276802@2x.jpg';
 import eyeshow from '../assets/eye.svg'
 import eyehide from '../assets/visibility_off_24dp_00000066_FILL0_wght400_GRAD0_opsz24.svg';
+import { motion } from 'framer-motion'
 
 
 
@@ -41,10 +42,18 @@ const SignUp = () => {
         <>
             <main className = 'sign-up-space px-3 py-4 d-md-fle justify-content-cente align-items-cente'>
                 <section className = "d-md-flex justify-content-between align-items-center sign-up-flex">
-                    <section className = 'image-wrapper-width'>
+                    <motion.section className = 'image-wrapper-width'
+                      initial = {{ x: '-100vw', opacity: 0,}}
+                      animate = {{ x: 0, opacity: 1}}
+                    //   transition = {{delay: 0.1 , duration: 0.7}}
+                    >
                          <img src= {SignupImg} alt="" className = 'image-signup'/>
-                    </section>
-                    <section className = 'form-wrapper-width'>
+                    </motion.section>
+                    <motion.section className = 'form-wrapper-width'
+                      initial = {{ x: '100vw', opacity: 0}}
+                      animate = {{ x: 0, opacity: 1}}
+                    //   transition = {{delay: 0.1 , duration: 0.7}}
+                    >
                         <div className = 'inside-wrapper'>
                          <div className = "mb-sign-button  d-flex align-items-center justify-content-center mb-4">
                             <h3 className = 'mb-tags'>MB</h3>
@@ -83,7 +92,7 @@ const SignUp = () => {
                           </form>
                          <p className = 'account-click'>Already have an account? <span className = 'navigate-sign-in'><Link to = '/auth/signin' className = 'navigate-sign-in'>Sign In</Link></span></p>
                         </div>
-                    </section>
+                    </motion.section>
                 </section>
             </main>
         </>

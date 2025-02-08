@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import { Link, Outlet, useMatch } from "react-router-dom"
+import { Link, Outlet, useMatch, useNavigate } from "react-router-dom"
 import { UpcomingEvent } from '../data';
 import { Event } from '../data';
 import { EventNear} from '../data';
@@ -29,6 +29,28 @@ const Home = () => {
 
 
     const Match = useMatch ('/')
+
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const navigate = useNavigate();
+
+    // const handleClick = (events) => {
+    //     navigate(`/dashboard/subhome`, { state: { events } });
+    //   };
+
+
+
+    //   const handleClick = (events) => {
+    //     setSelectedItem(events);
+    //     localStorage.setItem("selectedItem", JSON.stringify(events); // Store in localStorage
+    //     navigate("/dashboard/subhome"); // Navigate to details page
+    //   };
+
+    const handleClick = (events) => {
+        setSelectedItem(events);
+        localStorage.setItem("selectedItem", JSON.stringify(events)); // Store in localStorage
+        navigate("/dashboard/subhome"); // Navigate to details page
+      };
 
    
  
@@ -67,13 +89,14 @@ const Home = () => {
                          <div className = 'lp pb-4 mb-4'>
                              <div className = 'd-md-flex flex-md-wrap  justify-content-between align-items-cente outside-event-width' >
                                  {UpcomingEvent.map((events) =>{
-                                     const {id, title,host,Category,Images,icon,calender,ticket,venue,date,tick} = events
+                                     const {id, title,host,Category,Images,icon,calender,ticket,venue,date,tick, word} = events
                                      return (
                                          <motion.section key = {id} className = 'insider-event-width' 
                                          initial= {{ opacity: 0, y: 50 }}
                                          whileInView = {{opacity: 1, y: 0 }}
                                          viewport = {{ once: true ,  amount: 0.2 }}
                                          transition = {{ delay: 0.2, duration: 0.4, ease: 'easeInOut'}}
+                                         onClick={() => handleClick(events)}
                                           >
                                              <div className = ''>
                                                  <img src= {Images} alt="" className = 'w-100'/>
@@ -149,7 +172,7 @@ const Home = () => {
                                            <h1>Join An Event</h1>
                                            <p>Discover exciting events that match your interests and join with just a few clicks. Whether it's a concert, workshop, or social gathering, our platform makes it simple to find and book tickets. Stay updated with event details and enjoy seamless entry with digital tickets. Join the fun and make memories!</p>
                                            <div>
-                                             <Link to = '/dashboard/subhome'><button className = 'signss-btn'>Join Event</button></Link> 
+                                             <button className = 'signss-btn'>Join Event</button> 
                                            </div>
                                        </div>
                                        </div>

@@ -61,7 +61,8 @@ export const UpcomingEvent = [
         ticket: ticketicon,
         venue:'Teslim Balogun Stadium, Surlere',
         date:'Aug 30, 2024',
-        tick:'Regular, VIP'
+        tick:'Regular, VIP',
+        word: `Legendary British heavy metal brand Iron Maiden rocked the stage at Teslim Balogun Stadium in Surulere, Lagos, delivering an electrifying performance that left fans in awe. With thier iconic stage presence, powerful vocals, and epic guitar solos, iron Maiden treated the crowd to a night of timeless and fan favorites. The stadium buzzed with energy as thousands of metalheads sang along to hits like "The Tropper" and "Run to the Hills," making a historic moments in Nigeria's scene. it was an unforgettable concert, cemeneting Iron Maiden's legacy as global heavy metal icons.`
 
     },
     {
@@ -75,7 +76,8 @@ export const UpcomingEvent = [
         ticket: ticketicon,
         venue:'Online',
         date:'Oct 30, 2024',
-        tick:'Regular, VIP, VVIP'
+        tick:'Regular, VIP, VVIP',
+        word: 'Digital Marketing Course teaches individuals how to promote products, services, or brands online using various digital channels. These courses are ideal for beginners, entrepreneurs, and professionals looking to enhance their digital marketing skills. They are available online or offline and may offer certifications upon completion.'
 
     },
     {
@@ -89,7 +91,8 @@ export const UpcomingEvent = [
         ticket: ticketicon,
         venue:'Euphoria house 9',
         date:'Oct 30, 2024',
-        tick:'VIP, Regular'
+        tick:'VIP, Regular',
+        word: 'Euphoria by House 9 is a premier social venue in Lagos, Nigeria, offering short-term rentals, event spaces, gaming, and food take-out services. In December 2024, they hosted the "Yellowlyfe" end-of-year party on October 30th at 6 PM, with an entry fee of ₦2,000. While specific details about a "Detty December" house party at Euphoria by House 9 are not available, the term "Detty December" refers to the festive and lively events that take place in Nigeria during December. For a glimpse into such celebrations,'
 
     }
 ]
@@ -144,7 +147,7 @@ export const EventNear = [
         id:3,
         title:'The Experience 2024',
         host: 'Mubby Money',
-        Category:'Education',
+        Category:'Music',
         Images: image4,
         icon: loactionicon,
         calender: dateicon,
