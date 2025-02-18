@@ -1,7 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react';
 import leftarrow from '../assets/left-chevron-svgrepo-com (1) 1.svg'
-import { useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink, Link } from "react-router-dom";
 import '../Style/subhome.css'
+
+
 
 const SubHome = () => {
 
@@ -11,6 +13,9 @@ const SubHome = () => {
     // if (!events) return <p>No item selected</p>;
 
     const [selectedItem, setSelectedItem] = useState(null);
+
+    const [modalShow, setModalShow] = React.useState(false);
+
 
     useEffect(() => {
       const storedItem = localStorage.getItem("selectedItem");
@@ -92,8 +97,8 @@ const SubHome = () => {
                                   <span>{selectedItem.venue}</span>
                               </div>
                             </div>
-                            <div className = 'category-p my-4'>
-                                <p>{selectedItem.Category}</p>
+                            <div className = 'c my-4'>
+                                <button className = 'category-p'>{selectedItem.Category}</button>
                             </div>
                             <div className = 'sub-title'>
                                 <h1>{selectedItem.title}</h1>
@@ -111,16 +116,12 @@ const SubHome = () => {
                                       <p>Regular</p>
                                       <h4>NGN 5,000</h4>
                                   </div>
-                                  <button className = 'mt-3 select-tick'>Select Ticket</button>
+                                     <Link to = '/select/ticket'><button className = 'mt-3 select-tick' >Select Ticket</button></Link> 
                               </div>
                           </div>
                       </div>
-
+                     
                   </section>
-             
-                
-
-             
 
              </main>
 

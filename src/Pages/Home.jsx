@@ -34,22 +34,11 @@ const Home = () => {
 
     const navigate = useNavigate();
 
-    // const handleClick = (events) => {
-    //     navigate(`/dashboard/subhome`, { state: { events } });
-    //   };
-
-
-
-    //   const handleClick = (events) => {
-    //     setSelectedItem(events);
-    //     localStorage.setItem("selectedItem", JSON.stringify(events); // Store in localStorage
-    //     navigate("/dashboard/subhome"); // Navigate to details page
-    //   };
-
+   
     const handleClick = (events) => {
         setSelectedItem(events);
-        localStorage.setItem("selectedItem", JSON.stringify(events)); // Store in localStorage
-        navigate("/dashboard/subhome"); // Navigate to details page
+        localStorage.setItem("selectedItem", JSON.stringify(events)); 
+        navigate("/dashboard/subhome"); 
       };
 
    
@@ -61,7 +50,7 @@ const Home = () => {
                
                 <section className = 'background-images'  >
                    <div className = 'container space-home'> 
-                     <motion.div className = ' wrapper'
+                     <motion.div className = 'wrapper'
                        initial= {{ opacity: 0, y: 50 }}
                        whileInView = {{opacity: 1, y: 0 }}
                        viewport = {{ once: true ,  amount: 0.5 }}
@@ -87,7 +76,7 @@ const Home = () => {
                              <p className = 'mt-2'>See All</p>
                          </div>
                          <div className = 'lp pb-4 mb-4'>
-                             <div className = 'd-md-flex flex-md-wrap  justify-content-between align-items-cente outside-event-width' >
+                             <div className = 'd-md-flex flex-md-wrap justify-content-between align-items-cente outside-event-width' >
                                  {UpcomingEvent.map((events) =>{
                                      const {id, title,host,Category,Images,icon,calender,ticket,venue,date,tick, word} = events
                                      return (

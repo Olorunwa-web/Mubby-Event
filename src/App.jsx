@@ -10,8 +10,7 @@ import CreateEvent from "./Pages/CreateEvent";
 import Navbar from './layout/Navbar';
 import Resetpass from './Auth/RESETpass';
 import SubHome from './Pages/SubHome';
-import  { AnimatePresence } from 'framer-motion';
-
+import Modal1 from './lib/Modal1'
 
 
 function App() {
@@ -28,6 +27,7 @@ function App() {
             <Route path = "/dashboard/event" element = {<Event/>}/>
             <Route path = "/dashboard/createevent" element = {<CreateEvent/>}/>
           </Route>
+          <Route path = '/select/ticket' element= {<Modal1/>}/>
           <Route path = "/auth/signup" element = {<SignUp/>}/>
           <Route path = "/auth/signin" element = {<SignIn/>}/>
           <Route path = "/auth/forgotpassword" element = {<ForgotPassword/>}/>

@@ -134,6 +134,7 @@
     .background-nav {
         background-color: #000000;
         z-index: 10;
+        border:none;
     }
 
     .nav-top-space {

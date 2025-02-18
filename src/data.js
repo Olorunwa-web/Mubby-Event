@@ -28,6 +28,11 @@ import eventall3 from './assets/Frame 1171276723.png'
 import image4 from './assets/image (18).png';
 import image5 from './assets/image (16).png';
 import image6 from './assets/image (17).png';
+// ==========================================
+import image7 from './assets/image.jpg'
+
+
+
 
 export const navbarlink = [
     {
@@ -157,4 +162,130 @@ export const EventNear = [
         tick:'Free'
 
     }
+]
+
+
+export const EventsTag = [
+    {
+        id:1,
+        title:'Anthony Joshua VS Dubois',
+        host: 'World Boxing Federation',
+        Category:'Sport',
+        Images: image6,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Teslim Balogun Stadium, Surlere',
+        date:'Aug 30, 2024',
+        tick:'Regular, VIP, Ringside'
+
+    },
+    {
+        id:2,
+        title:'Khalil Rountree VS Alex Perierra',
+        host: 'UFC',
+        Category:'Sport',
+        Images: image7,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Online',
+        date:'Aug 30, 2024',
+        tick:'Regular, VIP'
+
+    },
+    {
+        id:3,
+        title:'Iron Maiden World Tour 2024',
+        host: 'Iron Maiden',
+        Category:'Concert',
+        Images: image1,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Teslim Balogun Stadium, Surlere',
+        date:'Aug 30, 2024',
+        tick:'Regular, VIP',
+    },
+    {
+        id:4,
+        title:'The Experience 2024',
+        host: 'Mubby Money',
+        Category:'Music',
+        Images: image4,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Tafawa Balewa Square, Obalande',
+        date:'Oct 30, 2024',
+        tick:'Free'
+
+    },
+    {
+        id:5,
+        title:'Digital Marketing Course Part',
+        host: 'Mubarak Johnson',
+        Category:'Education',
+        Images: image2,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Online',
+        date:'Oct 30, 2024',
+        tick:'Regular, VIP, VVIP',
+    },
+    {
+        id:6,
+        title:'Detty December House Party',
+        host: 'Party Freaks',
+        Category:'Party',
+        Images: image3,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Euphoria house 9',
+        date:'Oct 30, 2024',
+        tick:'VIP, Regular',
+    },
+    {
+        id:7,
+        title:'Mainland Block Party',
+        host: 'Dj Chicken',
+        Category:'Party',
+        Images: image5,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Teslim Balogun Stadium, Surlere',
+        date:'Oct 30, 2024',
+        tick:'Free'
+    },
+    {
+        id:8,
+        title:'Digital Marketing Course Part',
+        host: 'Mubarak Johnson',
+        Category:'Education',
+        Images: image2,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Online',
+        date:'Oct 30, 2024',
+        tick:'Regular, VIP, VVIP',
+    },
+    {
+        id:9,
+        title:'Anthony Joshua VS Dubois',
+        host: 'World Boxing Federation',
+        Category:'Sport',
+        Images: image6,
+        icon: loactionicon,
+        calender: dateicon,
+        ticket: ticketicon,
+        venue:'Teslim Balogun Stadium, Surlere',
+        date:'Aug 30, 2024',
+        tick:'Regular, VIP, Ringside'
+
+    },
+
 ]
