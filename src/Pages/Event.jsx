@@ -215,7 +215,7 @@ const Event = () => {
                              </div>
                          </div> 
                          <div className = 'd-flex justify-content-between align-items-center py-4'>
-                            <button className = 'prev-btn'><span className = 'previous-span'>Previous</span></button>
+                            <button className = 'prev-btn'>Previous</button>
                             <span className = 'page-num'>Page 1 of 10</span>
                             <button className = 'next-btn'>Next</button>
                         </div>   
