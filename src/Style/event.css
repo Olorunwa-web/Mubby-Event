@@ -264,6 +264,11 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #FFFFFF;
 }
 
+.previous-span {
+    margin-top: 0 auto;
+    text-align: center;
+}
+
 @media(max-width: 767px){
 
     .search-input {
@@ -336,7 +341,6 @@ input[type="search"]::-webkit-search-cancel-button {
         width: 80px;
         height: 40px;
         font-size: 15px;
-        padding-right: 10px;
     
     }
     
