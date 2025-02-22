@@ -271,6 +271,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @media(max-width: 767px){
 
+
+    .events-h3-tag {
+        font-size: 19px;
+    }
+
     .search-input {
         width: 100%;
         padding-left: 38px;
@@ -366,6 +371,10 @@ input[type="search"]::-webkit-search-cancel-button {
 
     .insider-event-widths {
         width: 48%;
+    }
+
+    .events-h3-tag {
+        font-size: 20px;
     }
 
 }
