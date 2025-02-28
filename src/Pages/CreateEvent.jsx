@@ -3,10 +3,26 @@ import Form from 'react-bootstrap/Form';
 import '../Style/createevent.css'
 import iconlocation from '../assets/location.svg'
 import drops from '../assets/Vector (2).svg';
-import cancel from '../assets/x.svg'
+import cancel from '../assets/x.svg';
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { createvent} from '../lib/SchemaValidation'
+
+
 
 const CreateEvent = () => {
 
+
+
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors, isSubmitting },
+      } = useForm({
+        resolver: yupResolver(createvent),
+      })
+      const onSubmit = (data) => console.log(data)
 
     const [image, setImage] = useState(null);
 
@@ -45,6 +61,7 @@ const CreateEvent = () => {
           <main className = 'container space-home py-3'>
               <h1 className = 'create-event-h1'>Create Event</h1>
               <h4 className = 'upload-h4'>Upload Photo</h4>
+              <form action="" onSubmit={handleSubmit(onSubmit)}>
               <div className = 'position-relative upload-wrapper d-flex justify-content-center align-items-center'>
                   <div>
                   {!image && (
@@ -53,33 +70,42 @@ const CreateEvent = () => {
                   </div>
                  {image && <img src= {image} alt="" className = 'upload-img'/> }
               </div>
+                 {/* {errors.uploadimg && <span className = 'spans'>{errors.uploadimg?.message}</span>} */}
               <section className = 'd-flex flex-column gap-4' >
               <div className = 'my-3'>
                   <h3 className = 'upload-h4 mt-3'>Time & Location</h3>
                   <div className = 'd-flex flex-column gap-1 mb-3'>
                       <label htmlFor="" className = 'label-date'>Date</label>
-                      <input type="date" name="" id="" className = 'input-date'/>
+                      <input type="date" name="" id="" className = 'input-date' {...register("date")}/>
+                      <span className = 'spans'>{errors.date?.message}</span>
                   </div>
                   <div className = 'd-flex gap-4 my-3'>
                       <div className = 'd-flex flex-column gap-1 time-input-wrapper '>
                           <label htmlFor="" className = 'label-date'>Time(Start)</label>
-                          <input type="time"  className = 'time-input' placeholder = '9:20' />
+                          <input type="time"  className = 'time-input' placeholder = '9:20' {...register("startTime")}/>
+                          {errors.startTime && <span className="spans">{errors.startTime.message}</span>}
                       </div>
                       <div className = 'd-flex flex-column gap-1'>
                           <label htmlFor="" className = 'label-date'>Time(End)</label>
-                          <input type="time" name="" id="" className = 'time-input'/>
+                          <input type="time" name="" id="" className = 'time-input' {...register("endTime")}/>
+                          {errors.endTime && <span className="spans">{errors.endTime.message}</span>}
                       </div>
                   </div>
                   <div className = 'd-flex align-items-center gap-5 event-flex mb-3'>
+                      <div>
                       <div className = 'd-flex flex-column gap-1 w-100 position-relative'>
                           <label htmlFor="" className = 'label-date'>Location</label>
-                          <select name="" id="" className = 'select-input position-relative'>
+                          <select name="" id="" className = 'select-input position-relativ' {...register("location")}>
                               <option value="location" disabled selected hidden className = 'option-select'>Enter Location<img src= {iconlocation} alt=""/></option>
                               <option value="Teslim Balogun Stadium, Surulere" className = 'option-select'>Teslim Balogun Stadium, Surulere</option>
                               <option value="Euphoria House 9"  className = 'option-select' >Euphoria House 9</option>
                               <option value="Tafawa Balewa Square (TBS)"  className = 'option-select' >Tafawa Balewa Square (TBS)</option>
                           </select>
-                          <img src= {iconlocation} alt="" className= 'select-icon'/>
+                            <img src= {iconlocation} alt="" className= 'select-icon'/>
+                      </div>
+                          {errors.location && (
+                        <span className="spans">{errors.location?.message}</span>
+                      )}
                       </div>
                       <div className = 'd-flex align-items-center gap-5 mt-2 pt-3 online-flex'>
                           <label htmlFor="" className = 'label-date'>Online</label>
@@ -96,7 +122,8 @@ const CreateEvent = () => {
                   </div>
                   <div className = 'd-flex flex-column  gap-1'>
                       <label htmlFor="" className = 'label-date'>Description</label>
-                      <textarea name="" id=""></textarea>
+                      <textarea name="" id="" {...register("description")}></textarea>
+                      {errors.description && <span className="spans">{errors.description.message}</span>}
                   </div>
                   
               </div>
@@ -105,13 +132,13 @@ const CreateEvent = () => {
                 <div className = 'd-flex align-items-center category-flex gap-4'>
                    <div className = 'd-flex flex-column gap-1 position-relative pick-cate '>
                        <label htmlFor="" className = 'label-date'>Select Category</label>
-                       <select name="" id="" onChange={handleSelect} className = 'select-input-1 position-relative'>
+                       <select name="" id="" onChange={handleSelect} className = 'select-input-1 position-relative' >
                           <option value="Category" disabled selected hidden className = 'option-select'>Category<img src= {iconlocation} alt=""/></option>
                           {options.map((option) => (
                               <option key = {option} value= {option} className = 'option-select'>{option}</option>
                           ))}
                        </select>
-                       {/* <img src= {drops} alt="" className = 'select-drop'/> */}
+                       
                   </div>
                   <div className = 'd-flex flex-column gap-1 tags-w'>
                       <label htmlFor=""className = 'label-date' >Tags</label>
@@ -172,9 +199,11 @@ const CreateEvent = () => {
              </div>
              <div className = 'd-flex gap-3 my-4'>
                  <button className = 'can-btn'>Cancel</button>
-                 <button className = 'cont-btn'>Continue</button>
+                 <button className = 'cont-btn' type = 'submit' disabled = {isSubmitting} >Continue</button>
              </div>
               </section>
+
+              </form>
           </main>
         </section>
         </>

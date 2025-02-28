@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <>
-        <section className = 'position-sticky top-0 w-100 h-100  background-nav'>
+        <section className = 'position-fixed top-0 w-100   background-nav'>
           <section className = "container spaces  ">
               <section className = "d-flex justify-content-between align-items-center py-3 nav-top-space ">
                   <motion.div className = "mb-button  d-flex align-items-center justify-content-center"  onClick={() => setShowSecond(true)}

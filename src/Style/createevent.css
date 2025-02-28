@@ -139,6 +139,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     height: 18px;
     position: absolute;
     bottom: 18%;
+    /* bottom: 37px; */
     left: 8px;
 }
 

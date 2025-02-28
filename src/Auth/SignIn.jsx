@@ -12,13 +12,7 @@ import { motion } from 'framer-motion'
 
 const SignIn = () => {
 
-
-
-
     const [showSecond, setShowSecond]  = useState (false)
-
-
-    
 
     const [see, setSee] = useState(false)
 
